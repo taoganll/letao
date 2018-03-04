@@ -1,0 +1,29 @@
+[33mcommit 3fe32dfdc156a1fbf640b33aebd9c9929003b7e0[m[33m ([m[1;36mHEAD -> [m[1;32mlogin[m[33m)[m
+Author: taoganll <3201094591@qq.com>
+Date:   Sun Mar 4 20:19:53 2018 +0800
+
+    登录页面完成
+
+[33mcommit 688b2b9829e5418566d0124532cdef6aa01c91bf[m
+Author: taoganll <3201094591@qq.com>
+Date:   Sun Mar 4 18:26:08 2018 +0800
+
+    登录静态页面
+
+[33mcommit 79bc21330e4ad80a527794c39a310143a4880812[m
+Author: taoganll <3201094591@qq.com>
+Date:   Sat Mar 3 21:42:08 2018 +0800
+
+    pc项目搭建完成
+
+[33mcommit e6a07426bd538cbf99e4b1b7e1ad4e59c8605b9d[m[33m ([m[1;32mmaster[m[33m)[m
+Author: taoganll <3201094591@qq.com>
+Date:   Sat Mar 3 21:26:44 2018 +0800
+
+    创建了pc文件夹
+
+[33mcommit 11c21a26438bb7e7d4ac9f9e32c76cfe40da2d60[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: taoganll <3201094591@qq.com>
+Date:   Fri Mar 2 10:26:03 2018 +0800
+
+    初始化项目

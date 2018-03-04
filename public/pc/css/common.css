@@ -1,9 +1,133 @@
-html,body{
+html, body {
     height: 100%;
 }
-.body-bg{
+
+.body-bg {
     background-color: #222d32;
 }
-.m-150{
+
+.m-150 {
     margin-top: 150px;
 }
+
+body {
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*Ê×Ò³²à±ßÀ¸*/
+.it_aside {
+    background-color: #222d32;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+    transition: all 1s;
+}
+.it_aside.now{
+    left: -180px;
+}
+
+.it_header {
+    width: 180px;
+    height: 50px;
+    background-color: #367fa9;;
+    display: block;
+    font-size: 24px;
+    line-height: 50px;
+
+}
+
+.Administrators {
+    width: 180px;
+    height: 150px;
+
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 38px;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 30px 0 auto 50px;
+}
+
+.Administrators p {
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/*.nav {*/
+    /*transition: all 1s;*/
+/*}*/
+
+.nav li a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 20px;
+    display: block;
+    border-left: 3px solid transparent;
+}
+
+
+
+ .nav a.now {
+
+    border-left-color: #069;
+    background-color: #1d1f21;
+}
+
+.er-nav li  {
+    padding-left: 40px;
+
+}
+/*ÉÏ±ßÀ¸*/
+.loginOut{
+    width: 100%;
+    padding: 0 20px 0 200px;
+    height: 50px;
+    background-color: #3c8dbc;
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: 16px;
+    transition: all 1s;
+
+
+
+}
+.loginOut.now{
+    padding: 0 20px;
+}
+.loginOut a{
+    display: block;
+    width: 20px;
+    height: 100%;
+    line-height: 50px;
+}
+/*ÄÚÈÝ*/
+
+

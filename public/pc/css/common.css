@@ -89,12 +89,16 @@ a, a:link, a:visited, a:hover, a:active {
     line-height: 40px;
     text-indent: 20px;
     display: block;
+
+
+}
+.nav li{
     border-left: 3px solid transparent;
 }
 
 
 
- .nav a.now {
+ .nav li.now {
 
     border-left-color: #069;
     background-color: #1d1f21;
@@ -118,6 +122,8 @@ a, a:link, a:visited, a:hover, a:active {
 
 
 
+
+
 }
 .loginOut.now{
     padding: 0 20px;
@@ -130,4 +136,51 @@ a, a:link, a:visited, a:hover, a:active {
 }
 /*ÄÚÈÝ*/
 
+.Bread{
+    padding-top: 70px;
+    padding-left: 200px;
+    padding-right: 20px;
+
+    margin-bottom: 70px;
+    height: 36px;
+    border-radius: 4px;
+}
+.Crumbs{
+    background-color:#f5f5f5;
+    height: 39px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    line-height: 39px;
+    text-indent: 20px;
+
+}
+.Crumbs a:nth-child(1){
+    color: #337ab7;
+}
+#classification{
+    color: #337ab7;
+}
+.Crumbs a:nth-child(3){
+    color: #777;
+}
+.Crumbs a:nth-child(5){
+    color: #777;
+}
+.Slash{
+    padding: 0 2px;
+}
+.echastr_left{
+   float: left;
+    width: 50%;
+    height: 400px;
+}
+.echastr_right{
+   float: right;
+    width: 45%;
+    height: 400px;
+}
+.box{
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
 

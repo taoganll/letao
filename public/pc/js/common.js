@@ -24,4 +24,32 @@ $(function () {
         $('.it_aside').toggleClass('now')
         $('.loginOut').toggleClass('now')
     })
+    $('.retreat').on('click',function(){
+        $('#myModal').modal('show')
+    })
+    $('.btn-loginOut').on('click',function(){
+        $.ajax({
+            type:'get',
+            url:'/employee/employeeLogout',
+            dataType:'json',
+            success:function(info){
+                //console.log(info)
+                if({success:true}){
+                    location.href="login.html";
+                }
+            }
+        })
+    })
+    //ÅÐ¶ÏÊÇ·ñµÇÂ¼
+    if(location.href.indexOf("login.html")==-1){
+        $.ajax({
+            type:'GET',
+            url:'/employee/checkRootLogin',
+            success:function(info){
+                if(info.error===400){
+                    location.href ="login.html"
+                }
+            }
+        })
+    }
 })

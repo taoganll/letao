@@ -1,0 +1,33 @@
+.It_nav {
+    padding: 10px;
+
+
+}
+.It_nav li{
+    width: 33%;
+    float: left;
+}
+.It_nav li img{
+    width: 100%;
+    display: block;
+}
+.lt-banner{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.lt-banner a{
+    display: block;
+    width: 48%;
+    float: left;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.lt-banner a:nth-child(odd){
+    margin-right: 15px;
+}
+.lt-banner a img{
+    width: 100%;
+}

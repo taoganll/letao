@@ -188,4 +188,7 @@ a, a:link, a:visited, a:hover, a:active {
 .box table td{
     text-align: center;
 }
+.box table tr td{
+    line-height: 30px;
+}
 

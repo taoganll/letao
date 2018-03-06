@@ -3,18 +3,18 @@
  */
 $(function () {
     var currentPage = 1;
-    var  pageSize = 5;
+    var pageSize = 5;
 //分院与渲染
-     function render() {
+    function render() {
         $.ajax({
             type: 'GET',
             url: '/user/queryUser',
             data: {
-                page:currentPage ,
+                page: currentPage,
                 pageSize: pageSize
             },
             success: function (info) {
-                console.log(info);
+                //console.log(info);
                 $('tbody').html(template('tmp', info))
 
                 $("#paginator").bootstrapPaginator({
@@ -37,7 +37,31 @@ $(function () {
     }
 
     render();
-    
+    //批准与禁用
+    $('tbody').on('click', '.btn', function () {
+        $('#Disable').modal('show');
+        var id = $(this).parent().data("id");
+        var isDelete = $(this).hasClass("btn-success") ? 1 :0 ;
+        $('#Determine').off().on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: '/user/updateUser',
+                data: {
+                    id: id,
+                    isDelete: isDelete,
+                },
+                success: function (info) {
+                    console.log(info)
+                        if (info.success) {
+                            $("#Disable").modal("hide");
+                            //重新渲染表格
+                            render();
+                        }
+                }
+            })
+        })
+
+    })
 
 })
 

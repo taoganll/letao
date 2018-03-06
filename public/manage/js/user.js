@@ -57,6 +57,8 @@ $(function () {
     var id = $(this).parent().data("id");
     var isDelete = $(this).hasClass("btn-danger")?0:1;
 
+    console.log(isDelete)
+
     //给确定按钮注册事件
     $(".btn_confirm").off().on("click", function () {
       //发送ajax请求

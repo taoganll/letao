@@ -79,7 +79,7 @@
         <th width="10%">操纵</th>
         </thead>
         <tbody>
-       
+
         </tbody>
     </table>
     <div class="text-right">
@@ -98,11 +98,11 @@
                 <h4 class="modal-title">温馨提示</h4>
             </div>
             <div class="modal-body">
-                <p style="color: #a94442" ;><span class="glyphicon glyphicon-question-sign">你确定要退出后台管理系统吗？</span></p>
+                <p style="color: #a94442" ;><span class="glyphicon glyphicon-question-sign">你确定要执行次操作吗？</span></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary btn-loginOut">退出</button>
+                <button type="button" class="btn btn-primary " id="Determine">确定</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -119,6 +119,7 @@
 <script src="lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/user.js"></script>
+<!--模板渲染-->
 <script type="text/template" id="tmp">
     {{each rows v i}}
     <tr>
@@ -129,7 +130,8 @@
         <td data-id="{{v.id}}">
             {{if v.isDelete === 0}}
             <button class="btn btn-success btn-sm">启用</button>
-            {{else}}
+            {{/if}}
+            {{if v.isDelete === 1}}
             <button class="btn btn-danger btn-sm">禁用</button>
             {{/if}}
         </td>

@@ -1,0 +1,46 @@
+.sidebar{
+    width: 90px;
+    height: 100%;
+    float: left;
+
+    position: relative;
+}
+
+.column{
+
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.sidebar li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: pink;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
+.sidebar li.now{
+    background-color: #fff;
+    border:none;
+}
+.column li{
+    float: left;
+    width: 33.33%;
+}
+.column li img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+    display: block;
+
+}
+.column li p{
+    color: #000;
+    text-align: center;
+}
+.category_tips{
+    font-size: 12px;
+    padding: 10px;
+}

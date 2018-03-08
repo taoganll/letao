@@ -197,4 +197,15 @@ a, a:link, a:visited, a:hover, a:active {
 .m-20{
     margin-bottom: 20px;
 }
-
+table .shops tr td{
+    line-height: 50px;
+}
+.file-box{
+    position: relative;
+}
+.btn-file{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+}

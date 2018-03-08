@@ -191,4 +191,7 @@ a, a:link, a:visited, a:hover, a:active {
 .box table tr td{
     line-height: 30px;
 }
+.er-nav{
+    display: none;
+}
 

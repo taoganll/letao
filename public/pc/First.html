@@ -20,7 +20,7 @@
     </div>
     <div class="nav">
         <ul>
-            <li><a href="user.html" ><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+            <li><a href="user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
             <li><a href="javascript:;"><span class="glyphicon glyphicon-th-list"></span> 分类管理</a>
                 <ul class="er-nav">
                     <li class="now"><a href="First.html">一级分类</a></li>
@@ -71,14 +71,70 @@
 </div>
 <!--内容-->
 <div class="box">
+    <button class="btn btn-default m-20 btn-add">添加分类</button>
+    <table class="table table-bordered table-responsive">
+        <thead>
+        <tr>
+            <th width="20%">序号</th>
+            <th width="80%">分类管理</th>
+        </tr>
+        </thead>
+        <tbody class="shop">
 
+        </tbody>
+    </table>
+    <div class="text-right">
+        <ul id="paginator"></ul>
+    </div>
 </div>
+<!--模态框-->
+
+<div class="modal fade" tabindex="-1" id="Add-to">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">添加分类</h4>
+            </div>
+            <form class="form-add">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="le-classification" placeholder="请输入一级分类"
+                               name="categoryName">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary btn-to">添加</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <script src="lib/nprogress/nprogress.js"></script>
-<script src="lib/echarts/echarts.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/First.js"></script>
+
+<script type="text/template" id="tmp">
+
+    {{each rows v i}}
+    <tr>
+        <td>{{(page-1)*size+i+1}}</td>
+        <td data-id="{{v.id}}">{{v.categoryName}}</td>
+    </tr>
+    {{/each}}
+
+</script>
 </body>
 </html>

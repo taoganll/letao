@@ -188,9 +188,7 @@ a, a:link, a:visited, a:hover, a:active {
 .box table td{
     text-align: center;
 }
-.box table tr td{
-    line-height: 30px;
-}
+
 
 .m-20{
     margin-bottom: 20px;
@@ -206,4 +204,8 @@ table .shops tr td{
     top:0;
     left: 0;
     opacity: 0;
+}
+.box>table>.field>tr>td{
+    text-align: center;
+    vertical-align: middle;
 }

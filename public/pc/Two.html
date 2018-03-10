@@ -23,8 +23,8 @@
             <li><a href="user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
             <li><a href="javascript:;"><span class="glyphicon glyphicon-th-list"></span> 分类管理</a>
                 <ul class="er-nav">
-                    <li class="now"><a href="First.html">一级分类</a></li>
-                    <li><a href="Two.html">二级分类</a></li>
+                    <li><a href="First.html">一级分类</a></li>
+                    <li  class="now"><a href="Two.html">二级分类</a></li>
                 </ul>
             </li>
             <li><a href="classification.html"><span class="glyphicon glyphicon-tags"></span> 商品管理</a></li>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="le-classification" placeholder="请输入二级分类"
+                        <input type="text" autocomplete="off" class="form-control" id="le-classification" placeholder="请输入二级分类"
                                name="brandName">
 
                     </div>
@@ -125,8 +125,10 @@
                             <input type="file" style="display: none" id="fileupload" class="btn btn-default" name="pic1" data-url="/category/addSecondCategoryPic">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group img_box">
                         <img src="images/none.png" width="100" height="100" alt=""/>
+                        <input type="hidden"name="brandLogo"/>
+                        <input type="hidden"name="hot"value="1"/>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
